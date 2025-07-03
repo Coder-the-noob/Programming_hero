@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Model</title>
+
+    <style>
+        .flex-container{
+            display: flex; /* Enable flexbox layout */
+            justify-content: center; /* Distribute space around items */
+            align-items: center; /* Center items vertically */
+            height: 200px;
+            border: 2px solid black;
+        }
+
+        .box{
+            width: 50px;
+            height: 50px;
+            background-color: coral;
+            margin: 5px;
+            border: 2px solid darkorange;
+        }
+    </style>
+</head>
+<body>
+    <div class="flex-container">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+</body>
+</html>
