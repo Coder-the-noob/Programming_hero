@@ -1,0 +1,26 @@
+.container{
+    background-color: aquamarine;}
+
+.contain{
+    background-color: lightcoral;
+    font-size: 2em;
+    max-width: 1200px;
+    margin: 0 auto;
+    /* margin use kore container er moddhe center korte hbe */
+    padding: 20px;
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+}
+
+nav li a{
+    text-decoration: none;
+    margin-right: 20px;
+    color: black;
+}
+
+nav li:hover{
+   background-color: lightblue;
+}

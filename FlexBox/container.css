@@ -1,0 +1,18 @@
+.container{
+    background-color: greenyellow;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 600px; /* Parent height na thakle verticaly align bujha jabe na */
+
+
+}
+
+.box{
+    background-color: lightblue;
+    height: 200px;
+    /* stretch kaj korbe jodi height mention kora thake */
+    /*  */
+    width: 200px;
+    font-size: 3em;
+}
