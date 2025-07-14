@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo_element</title>
+
+    <style>
+        h3::after{
+            content: " - This is a pseudo element";
+            color: red;
+            font-size: 0.8em;
+            background-color: yellowgreen;
+        }
+
+        h3::before{
+            content: "Pseudo Element: ";
+            color: blue;
+            font-weight: bold;
+        }
+
+        p::first-letter{
+            font-size: 3em;
+            color: red;
+        }
+        ::selection{
+            background-color: yellow;
+            color: black;
+        }
+
+        input::placeholder{
+            color: red;
+            font-style: italic;
+        }
+    </style>
+</head>
+
+<body>
+    <h3>Heading -1</h3>
+    <h3>Heading -2</h3>
+    <h3>Heading -3</h3>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim id sapiente qui inventore blanditiis modi, aperiam necessitatibus excepturi dignissimos fugiat ex repellendus. Ex at ipsam fugiat placeat quo dolorem quia?</p>
+    <p>Nam architecto repudiandae neque perferendis pariatur delectus ratione, accusamus aliquam suscipit soluta laudantium debitis harum iure necessitatibus magnam omnis vero ipsum quo, expedita sapiente dolorem, maiores consectetur officia? Illum, hic?</p>
+    <p>Dolores totam repellat nesciunt atque quaerat in ipsum, facilis laboriosam dolorem, vitae quas iusto iste obcaecati aut animi excepturi. Soluta ipsum corporis placeat expedita odit beatae culpa quo consequuntur eius.</p>
+
+    <input type="text" placeholder="Type something here...">
+</body>
+</html>
