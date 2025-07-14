@@ -4,6 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CSS position</title>
+    <style>
+        .box{
+            border: 2px dotted black;
+            width: 200px;
+        }
+
+        /* .ring{
+            position: relative;
+            left: 50px;
+            top: -30px;
+        } */
+
+        .ring{
+            position: absolute;
+        }
+    </style>
 </head>
 <body>
     <h3>CSS position Properties</h3>
@@ -11,11 +27,23 @@
     <ol>
         <!-- Flow Related -->
         <li>Static</li>
-        <li>Relative</li>
-        <li>Absolute</li>
+        <li>Relative: <small>current position relative e kototuku change hobe and will not leave the current spot</small></li>
+        <li>Absolute <small>will lose it's own position and will move based on the root</small></li>
         <!-- Scroll related -->
         <li>Fixed</li>
         <li>Sticky</li>
     </ol>
+
+    <div class="swim-container">
+        <div class="box boy">
+            <img src="swim/boy.svg" alt="">
+        </div>
+        <div class="box ring">
+            <img src="swim/ring.svg" alt="">
+        </div>
+        <div class="box water">
+            <img src="swim/water.svg" alt="">
+        </div>
+    </div>
 </body>
 </html>
