@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nav_Form</title>
+    <style>
+        nav{
+            display: flex;
+            justify-content: space-between;
+        }
+        nav a {
+            text-decoration: none;
+            color: black;
+        }
+
+        .login-form {
+            width: 50%;
+            margin: 20px auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .login-form h3{
+            text-align: center;
+        }
+
+        .login-form input[type="submit"]{
+            background-color: #4CAF50; /* Green */
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        .login-form input[type="submit"]:hover {
+            background-color: #a09e45; 
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div>
+        <a href="">Home</a>
+        <a href="">About Us</a>
+        <a href="">Blog</a>
+        <a href="">News</a>
+        </div>
+        <a href="">Login</a>
+    </nav>
+
+    <form class="login-form">
+        <h3>Please Log in</h3>
+        <input type="text" placeholder="Enter your username" required>
+        <input type="email" placeholder="Enter your email" required>
+        <input type="password" placeholder="Enter your password" required>
+        <input type="submit" value="Log in">
+    </form>
+</body>
+</html>
