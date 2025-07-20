@@ -3,64 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TASK_1</title>
+    <title>Task-1</title>
     <style>
-       /* Reset and base style */
-        body {
-        margin: 0;
-        padding: 0;
-        font-family: sans-serif;
-        background-color: #f5f5f5;
+        .container{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
         }
-
-        .container {
-        display: flex;
-        flex-direction: row;
-        border: 2px solid black;
-        margin: 20px;
-        height: 80vh;
-        box-sizing: border-box;
-        gap: 10px;
+        .container_2 {
+            display: flex;
         }
-
-        /* Left and Right Panels */
-        .left {
-        background-color: #ccc;
-        flex: 1;
-        padding: 20px;
-        text-align: center;
-        }
-
-        .right {
-        background-color: #f4f9;
-        flex: 2;
-        padding: 20px;
-        text-align: center;
-        }
-
-        /* Mobile Styles */
-        @media (max-width: 768px) {
-        .container {
-            flex-direction: column;
-            height: 100vh;
-        }
-
-        .left {
-            flex: 0 0 30vh; /* Take 30% of the screen height */
-        }
-
-        .right {
-            flex: 1; /* Take remaining height */
-        }
-        }
-                        
-        
     </style>
 </head>
 <body>
     <div class="container">
-        <div class="left">Left</div>
-        <div class="right">Right</div>
+        <div class="first">
+            <div class="container_1">
+                <h3 class="desktop">Desktop</h3>
+                <div class="sub1">Left</div>
+                <div class="sub2">Right</div>
+            </div>
+        </div>
+        <div class="second">
+            <div class="container_2">
+                <h3 class="mobile">Mobile</h3>
+                <div class="sub3">Left</div>
+                <div class="sub4">Right</div>
+            </div>
+        </div>
     </div>
 </body>
 </html>
