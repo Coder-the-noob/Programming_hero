@@ -3,59 +3,40 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
     <link
       rel="icon"
       href="resources/favicon.ico"
       type="image/x-icon"
       sizes="96x96"
     />
-
     <title>devChallenges.io | Minimal Blog Card</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../Minimal-blog-card-starter-master/style.css">
 
-    <!--You are welcome to delete these styles or modify them in your own stylesheet -->
-    <style>
-      * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-      }
 
-      body {
-        height: 100vh;
-      }
-
-      .author-info {
-        font-size: 14px;
-        text-align: center;
-        margin-top: 16px;
-        color: rgb(55, 65, 81);
-      }
-
-      .author-info a {
-        text-decoration: none;
-      }
-    </style>
-  </head>
-  <body>
+</head>
+  <body class="sora-font">
     <div class="card-container">
       <div class="card">
-        <img src="../Minimal-blog-card-starter-master/resources/Cactus.jpg" alt="Cactus">
+        <img src="../Minimal-blog-card-starter-master/resources/Cactus.jpg" alt="Cactus" class="card-image" />
         <div class="card-content">
           <span class="tag">Design</span>
           <h2>Embracing Minimalism</h2>
           <p>From minimalist sculptures to minimalist paintings, this blog will inspire you to appreciate the beauty that lies in simplicity.</p>
-          <hr>
-          <div class="author">Annie Spratt</div>
+          <!-- <hr> -->
+          <div class="author"><br> Annie Spratt</div>
         </div>
       </div>
-    </div>
-
-    <div class="author-info">
+      <footer>
+      <div class="author-info">
       Coded by <a href="#">Md. Moin Matubbar</a> | Challenge by
       <a href="https://www.devchallenges.io?ref=challenge" target="_blank"
         >devChallenges.io</a
       >.
+    </div>
+    </footer>
     </div>
   </body>
 </html>

@@ -1,0 +1,116 @@
+ *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.sora-font {
+  font-family: "Sora", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: bold;
+  font-style: normal;
+}
+
+body {
+    min-height: 100vh;
+    background-color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    padding: 1rem;   
+}
+
+.card-container{
+    max-width: 350px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.card{
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 10px 5px 5px rgb(57 65 80 / 0.1);
+    
+}
+
+.card-image{
+    width: 100%;
+    height: auto;
+    display: block;
+    background-color: #FFFFFF;
+    border-radius: 8px 8px;
+    padding: 0px 20px 0px 0px;
+}
+
+.card-content{
+    padding: 1rem;
+}
+
+.tag{
+    display: inline-block;
+    background-color: #E5EAF0;
+    color: #7C19EE;
+    font-size: 10px;
+    font-weight: 700;
+    padding: 0.25rem 0.75rem;
+    border-radius: 999px;
+    margin-bottom: 0.75rem;
+}
+
+h2{
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: #20293A;
+    margin-bottom: 0.5rem;
+}
+
+.card-content p{
+    font-size: 0.875rem;
+    color:#6b7280;
+    margin-bottom: 1.25rem;
+    font-weight: 400;
+}
+.author{
+    color: #394150;
+    font-size: 14px;
+    border-top: 1px solid #E5EAF0;
+    font-weight: 400;
+}
+
+
+.author-info {
+    
+     font-size: 12px;
+     text-align: center;
+     margin-top: 16px;
+     color: rgb(55, 65, 81);
+}
+
+.author-info a {
+        text-decoration: none;
+}
+
+
+@media  (min-width: 1025px) {
+    .card-container{
+        max-width: 400px;
+    }
+    
+}
+
+@media  (max-width: 1024px) {
+    .card-container{
+        max-width: 90%;
+    }
+}
+
+@media (max-width: 412px) {
+   
+    .card-content h2{
+        font-size: 1.1rem;
+    }
+    .card-content p{
+        font-size: 0.875rem;
+    }
+    
+}
