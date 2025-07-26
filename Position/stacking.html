@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stacking Context`</title>
+    <style>
+   body {
+      margin: 0; /* Remove default margin for cleaner layout */
+      font-family: Arial, sans-serif;
+    }
+    .parent1 {
+      position: relative; /* Creates stacking context */
+      z-index: 1; /* Lower stacking context */
+      background-color: lightblue;
+      width: 200px;
+      height: 200px;
+      margin: 20px; /* Add margin for visibility */
+    }
+    .parent2 {
+      position: relative; /* Creates stacking context */
+      z-index: 2; /* Higher stacking context */
+      background-color: lightgreen;
+      width: 200px;
+      height: 200px;
+      margin-left: 100px; /* Shift to create overlap */
+      margin-top: -150px; /* Overlap with parent1 */
+    }
+    .child {
+      position: absolute; /* Positioned relative to parent */
+      width: 100px;
+      height: 100px;
+      background-color: coral;
+      top: 50px;
+      left: 50px;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .child-high-z {
+      z-index: 1000; /* High z-index, but constrained by parent2's stacking context */
+    }
+  </style>
+</head>
+<body>
+    <div class="parent1">
+    <div class="child">Child in Parent 1</div>
+  </div>
+  <div class="parent2">
+    <div class="child child-high-z">Child in Parent 2 (z-index: 1000)</div>
+  </div>
+</body>
+</html>
