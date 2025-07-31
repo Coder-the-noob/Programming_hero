@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<body>
+    <script>
+        let score = prompt("Enter your score (0-100):");
+        score = parseFloat(score);
+        let result;
+
+        if (isNaN(score) || score < 0 || score > 100) {
+            result = "Please enter a valid score between 0 and 100.";
+        } else {
+            if (score >= 90) {
+                result = "Grade: A";
+            } else if (score >= 80) {
+                result = "Grade: B";
+            } else if (score >= 70) {
+                result = "Grade: C";
+            } else if (score >= 60) {
+                result = "Grade: D";
+            } else {
+                result = "Grade: F";
+            }
+        }
+
+        alert(result);
+    </script>
+</body>
+</html>
