@@ -5,3 +5,8 @@
  */
 
 /*programming hero*/
+
+let i = 1;
+for (i = 1; i <= 60; i++) {
+  console.log("I will invest at least 6 hrs every single day for next " + i + " days!");
+}
