@@ -1,0 +1,47 @@
+const cricketer ={
+    name: "Shakib Al Hasan",
+    age: 36,
+    team: "Bangladesh",
+    battingStyle: "Left-handed",
+    bowlingStyle: "Slow left-arm orthodox",
+    skills: ["Batting", "Bowling", "Fielding"],
+    isCaptain: true,
+    'best performance': "Scored 100 runs and took 5 wickets in a match",
+    address: {
+        street: "456 Cricket Lane",
+        city: "Dhaka",
+        country: "Bangladesh"
+    },
+    hobbies: ["Cricket", "Traveling", "Reading"],
+    awards: ["ICC Player of the Year", "ESPNcricinfo Cricketer of the Decade"],
+    personalInfo: {
+        birthDate: "1987-03-24",
+        height: "5'9\"",
+        weight: "70 kg"
+    },
+    achievements: {
+        ODI: "All-rounder of the year 2019",
+        T20: "Player of the match in World Cup 2021",
+        All_formats: "Daddy of the ALL-rounders in the world"
+    },
+    records: {
+        matches: 200,
+        runs: 6000,
+        wickets: 300
+    }
+
+}
+
+console.log(cricketer);
+console.log(cricketer.name);
+console.log(cricketer['best performance']); // bracket notation for spaces in key
+console.log(cricketer.awards[0]); // accessing an array within the object
+console.log(cricketer.personalInfo.birthDate); // accessing nested object property
+console.log(cricketer.achievements.ODI); // accessing nested object property
+console.log(cricketer.records.matches); // accessing nested object property
+console.log(cricketer.address.city); // accessing nested object property
+console.log(cricketer.skills.join(', ')); // joining skills array into a string
+console.log(cricketer.hobbies.slice(0, 2)); // slicing hobbies array to get first two elements
+
+cricketer.achievements.All_formats = "Best All-rounder in the world";
+console.log(cricketer.achievements.All_formats); // updated achievement
