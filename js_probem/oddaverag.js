@@ -1,0 +1,22 @@
+function oddAverage(numbers){
+    const odds = [];
+    for(const number of numbers){
+        if(number % 2 === 1){
+           odds.push(number);
+        }
+    }
+    //odds is the array that contains all the odd numbers from the input
+    //console.log(odds);
+    let sum = 0;
+    for(const number of odds){
+        sum += number;
+    }
+    const count = odds.length;
+    console.log(sum , count);
+    const avg = sum / count;
+    return avg;
+}
+
+const numbers = [13, 67, 34, 28, 59, 5, 99, 38, 46];
+const avg = oddAverage(numbers);
+console.log('average of the odd number is ', avg);
