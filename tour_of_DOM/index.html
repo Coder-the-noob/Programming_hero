@@ -5,14 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tour Of DOM</title>
     
-
-    <style>
+     <style>
         h1{
             color:gold;
         }
 
         #food-title{
             color: red;
+        }
+
+        .international .hayEle{
+            font-weight: 700;
         }
     </style>
     <link rel="stylesheet" href="styles/style.css">
@@ -24,12 +27,19 @@
 
    <main>
      <h1>Welcome to the Tour Of DOM</h1>
-    <section>
+    
+     <section class="international" id="faridpur">
+        <p>
+            Lorem ipsum dolor <span>Mair khabi</span> amet consectetur adipisicing <span>tore marmu</span> Dolore, dolorum!
+        </p>
+
+        <h1> Faridpur is my <span>hometown</span></h1>
+
         <ul>
             <li>Introduction to DOM</li>
-            <li>Manipulating DOM Elements</li>
-            <li>Event Handling in DOM</li>
-            <li>Creating and Removing DOM Elements</li>
+            <li class="hayEle">Manipulating DOM Elements</li>
+            <li class="hayEle">Event Handling in DOM</li>
+            <li class="hayEle">Creating and Removing DOM Elements</li>
         </ul>
     </section>
 
@@ -41,6 +51,15 @@
             <li class="bideshi">Pizza</li>
             <li class="bideshi">Sushi</li>
             <li>Tacos</li>
+        </ul>
+    </section>
+
+    <section >
+        <ul id="player-list">
+            <li>Messi</li>
+            <li>Ronaldo</li>
+            <li>Neymar</li>
+            <li>Mbappe</li>
         </ul>
     </section>
    </main>
@@ -77,5 +96,6 @@
    </script>
 
    <script src="js/script.js"></script>
+   <script src="js/child.js"></script>
 </body>
 </html>
