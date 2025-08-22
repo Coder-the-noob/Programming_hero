@@ -4,13 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tour Of DOM</title>
-    <link rel="stylesheet" href="styles/style.css">
+    
 
     <style>
         h1{
             color:gold;
         }
+
+        #food-title{
+            color: red;
+        }
     </style>
+    <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
     <header>
@@ -19,12 +24,25 @@
 
    <main>
      <h1>Welcome to the Tour Of DOM</h1>
-    <ul>
-        <li>Introduction to DOM</li>
-        <li>Manipulating DOM Elements</li>
-        <li>Event Handling in DOM</li>
-        <li>Creating and Removing DOM Elements</li>
-    </ul>
+    <section>
+        <ul>
+            <li>Introduction to DOM</li>
+            <li>Manipulating DOM Elements</li>
+            <li>Event Handling in DOM</li>
+            <li>Creating and Removing DOM Elements</li>
+        </ul>
+    </section>
+
+    <section>
+        <h1 id="food-title">Food I love most</h1>
+        <ul>
+            <li>Biriyani</li>
+            <li class="bideshi">Pasta</li>
+            <li class="bideshi">Pizza</li>
+            <li class="bideshi">Sushi</li>
+            <li>Tacos</li>
+        </ul>
+    </section>
    </main>
 
    <script>
@@ -32,18 +50,29 @@
         // console.log('Hello hi bye bye')
 
         const liCollection = document.getElementsByTagName('li');
-        console.log(liCollection); 
+        // console.log(liCollection); 
         for(const li of liCollection){
-            console.log(li.innerText);
+            // console.log(li.innerText);
             
         }
 
         // h1 tags
 
         const h1Collection = document.getElementsByTagName('h1');
-        console.log(h1Collection);
+        // console.log(h1Collection);
         for(const h1 of h1Collection){
-            console.log(h1.innerText);
+            // console.log(h1.innerText);
+        }
+
+        // getElementById
+        const foodTitleH1 = document.getElementById('food-title');
+        // console.log(foodTitleH1);
+        foodTitleH1.innerText = 'My Favorite Foods';
+
+        // getElementsByClassName
+        const foreign = document.getElementsByClassName('bideshi');
+        for(const item of foreign){
+            console.log(item.innerText);
         }
    </script>
 
