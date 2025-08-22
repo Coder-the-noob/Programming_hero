@@ -23,12 +23,28 @@
         <li>Introduction to DOM</li>
         <li>Manipulating DOM Elements</li>
         <li>Event Handling in DOM</li>
+        <li>Creating and Removing DOM Elements</li>
     </ul>
    </main>
 
    <script>
-        console.log("Welcome to the Tour Of DOM")
-        console.log('Hello hi bye bye')
+        // console.log("Welcome to the Tour Of DOM")
+        // console.log('Hello hi bye bye')
+
+        const liCollection = document.getElementsByTagName('li');
+        console.log(liCollection); 
+        for(const li of liCollection){
+            console.log(li.innerText);
+            
+        }
+
+        // h1 tags
+
+        const h1Collection = document.getElementsByTagName('h1');
+        console.log(h1Collection);
+        for(const h1 of h1Collection){
+            console.log(h1.innerText);
+        }
    </script>
 
    <script src="js/script.js"></script>
