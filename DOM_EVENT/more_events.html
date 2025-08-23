@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More Events</title>
+</head>
+<body>
+    <button id="btn-mouse">
+        Micky Mouse Nancy
+    </button>
+    <input type="text" id="input-text" placeholder="Type something here...">
+    <input type="text" id="input-mail" placeholder="Type something here...">
+
+    <script>
+        // document.getElementById('btn-mouse')
+        // .addEventListener('mouseenter', function(){
+        //     console.log('You Entered the Button');
+        // })
+        // document.getElementById('btn-mouse')
+        // .addEventListener('mousemove', function(){
+        //     console.log('You Moved the Mouse Over the Button');
+        // })
+        // document.getElementById('btn-mouse')
+        // .addEventListener('mouseout', function(){
+        //     console.log('You Moved the Mouse Over the Button');
+        // })
+
+        // document.getElementById('input-text').addEventListener('focus', function(){
+        //     console.log('Input field is focused');
+        // })
+        // document.getElementById('input-mail').addEventListener('focus', function(){
+        //     console.log('Input email field is focused');
+        // })
+        // document.getElementById('input-text').addEventListener('blur', function(){
+        //     console.log('Input field is focused');
+        // })
+        // document.getElementById('input-mail').addEventListener('blur', function(){
+        //     console.log('Input email field is focused');
+        // })
+        // document.getElementById('input-mail').addEventListener('keydown', function(event){
+        //     console.log('Input email field is focused', event);
+        // })
+        document.getElementById('input-mail').addEventListener('keyup`', function(event){
+            console.log('typing', event.target.value);
+        })
+    </script>
+</body>
+</html>
