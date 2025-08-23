@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Handler</title>
+</head>
+<body>
+    <h1 id ="event-handler">
+        Event Handler
+    </h1>
+    <button id = "btn-Click">Click Me</button>
+
+    <br>
+    <p id = "make-P">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, esse.</p>
+    <button id = "btn-Click-2">Click Me Too</button>
+
+    <br>
+    <br>
+    <br>
+    <p id="my-Name">No Name</p>
+    <input type="text" id="input-name" placeholder="Enter your name">
+    <button id="btn-Submit">Submit</button>
+
+    <script>
+       //set event listener
+       document.getElementById('btn-Submit').addEventListener('click', function(){
+        // console.log('Button CLicked')
+
+        //get the text from the input field
+        const nameInput = document.getElementById('input-name');
+        console.log(nameInput.value);
+
+        //set the name
+        const nameP = document.getElementById('my-Name');
+        nameP.innerText = nameInput.value;
+
+       })
+    </script>
+
+    <script src="js/handler.js"></script>
+</body>
+</html>
