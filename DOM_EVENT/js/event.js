@@ -22,3 +22,13 @@ btnMakeGreen.onclick = makeGreen;
     function makeGreen(){
         document.body.style.backgroundColor = 'green';
  }
+
+//  option 4 addEventListener recommended
+
+ document.getElementById('btn-make-purple').addEventListener('click', function makePurple(){
+            document.body.style.backgroundColor = 'purple';
+        });
+
+        document.getElementById('btn-make-gold').addEventListener('click', function makeGold(){
+            document.body.style.backgroundColor = 'gold';
+        });
